@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+*{
+  background-color: #24252a;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  box-sizing: border-box;
+  color: #edf0f1;
+  list-style-type: none;
+
+}
+li, a, button{
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.pagetitle{
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: 600;
+}
+.nav-links li{
+  display: inline-block;
+  list-style: none;
+  padding: 0px 20px;
+  cursor: pointer;
+
+}
+.nav-links li a{
+  transition: all 0.3s ease 0s;
+}
+.nav-links li a:hover{
+  transition: all 0.3s ease 0s;
+  font-weight: 600;
+  color: #0088a9;
+  text-decoration: underline;
+}
+.contact-button{
+  padding: 9px 25px;
+  background-color: rgba(0,136,169,1);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  border-radius: 50px;
+}
+.contact-button:hover{
+  background-color: rgba(0,136,169,0.8);
+  font-weight: 500;
+}
+
+.footerflex-container {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow:hidden;
+  padding-bottom: 50px;
+  width: 80%;
+  padding-left: 10%;
+  padding-top: 200px;
+  position: absolute;
+}
+.singlefooterpart{
+  padding-right: 10px;
+}
+.welcome{
+  display:inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+.welcome .text{
+  flex: 1;
+  padding-right: 7%;
+  padding-bottom: 5%;
+}
+.title{
+  font-size: 55px;
+}
+.allotmentpicture{
+  height: 50vh;
+  width: auto;
+ border-radius: 25px;
+  padding-bottom: 100px;
+}
+.allotmentpicture{
+  border-radius: 35px;
+}
+
+.maps{
+  display:inline-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 0;
+}
+.embedinggmap{
+  flex: 1;
+  padding-right: 5%;
+}
+.directions{
+flex: 1;
+}
+.FAQ{
+  display:inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 50px;
+  padding-bottom: 0;
+}
+.FAQs{
+  padding-top: 15px;
+  flex: 1;
+  width: 40vw;
+  padding-right: 2%;
+}
+.satelliteview1 img{
+  flex: 1;
+  height: 50vh;
+  width: auto;
+  padding-bottom: 100px;
+  border-radius: 30px;
+  padding-top: 5%;
+
+}
+.FAQstyle{
+  font-size: 30px;
+}
+.ContactForm{
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
+.contactcontainer{
+  background-color:#24252a ;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40vw;
+  border 1px solid #000;
+}
+section{
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+.form-group,.form-group textarea{
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 10px white;
+  margin-top: 5px;
+}
+textarea{
+  resize: vertical;
+  border: white;
+}
+button[type="submit"]{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  margin-top: 20px;
+  transition: .3s ease background-color;
+  cursor: pointer;
+}
+.message{
+  border-style: solid;
+}
+button[type="submit"]:hover{
+color: green;
+background-color: white;
+margin-top: 20px;
+border-radius: 20px;
+padding-top: 20px;
+}
+#status{
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin:0 auto;
+  border-radius: 8px;
+  margin-top: 50px;
+  color:black ;
+}
+#status.success{
+  background-color: lightgreen;
+  animation: status 4s ease delay forwards;
+}
+#status.error{
+  background-color: orange;
+  animation: status 4s ease delay forwards;
+
+}
+@@keyframes status {
+  0%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  90%{
+    opacity: 1;
+    pointer-events: all;
+  }
+  100{
+    opacity: 0;
+    pointer-events: none;
+  }
+
+}
